@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="#" class="logo">Clamphook</a>
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <section class="quiz-section">
+          <div class="quiz-box">
+            <h1>Clamphook</h1>
+            <div class="quiz-header">
+              <span>Clamphook Quiz Website </span>
+              <span class="header-timer"
+                >Time Left: <span id="timer">4:00</span></span
+              >
+            </div>
+            <h2 class="question-text"></h2>
+            <div class="option-list"></div>
+            <div class="quiz-footer">
+              <span class="question-total">1 of 5 Questions</span>
+
+              <button class="next-btn">Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="home">
+          <div class="home-content">
+            <h1>Quiz Website</h1>
+            <p>
+              Welcome to the Clamphook Quiz, a comprehensive and engaging
+              platform designed to test your knowledge across various subjects.
+              This quiz is perfect for learners of all levels, offering a mix of
+              questions to challenge and enhance your understanding.
+            </p>
+            <button class="start-btn">Start Quiz</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="popup-info">
+      <h2>Quiz Guide</h2>
+      <span class="info">1. You will have 4 minutes for all questions.</span>
+      <span class="info"
+        >2. Once you select your answer, it can't be undone.</span
+      >
+      <span class="info"
+        >3. You can't select any option once time goes off.</span
+      >
+      <span class="info"
+        >4. You can't exit from the Quiz while you're playing.</span
+      >
+      <span class="info"
+        >5. You'll get points on the basis of your correct answers.</span
+      >
+
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn continue-btn">Continue</a>
+      </div>
+    </div>
+
+    <div class="congrats-box">
+      <div class="congrats-content">
+        <span class="icon">&#127881;</span>
+        <!-- celebration icon -->
+        <div class="congrats-text">Congratulations!</div>
+        <div class="score_text"></div>
+        <div class="buttons">
+          <button class="restart-btn">Restart Quiz</button>
+          <button class="exit-btn">Exit Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
